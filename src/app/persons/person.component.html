@@ -1,0 +1,6 @@
+<p *ngIf="isfetching"> Fetching data...</p>
+<ul *ngIf="!isfetching">
+    <li *ngFor="let person of personList" (click)="onRemovePerson(person)">{{ person }}</li><!--string interpolation-->
+</ul>
+
+ 
